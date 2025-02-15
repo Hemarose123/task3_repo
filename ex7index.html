@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe's Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 20px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      section h2 {
+        color: #333;
+      }
+
+      img.profile-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .contact-info,
+      .interests,
+      .classes {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .contact-info li,
+      .interests li,
+      .classes li {
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>John Doe's Profile</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Personal Information</h2>
+        <img src="john_doe.jpg" alt="John Doe" class="profile-img" />
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Age:</strong> 25</p>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>Location:</strong> New York, USA</p>
+      </section>
+
+      <section>
+        <h2>Interests</h2>
+        <ul class="interests">
+          <li>
+            <strong>Reading:</strong> I enjoy reading books on technology,
+            philosophy, and science fiction.
+          </li>
+          <li>
+            <strong>Traveling:</strong> I love to explore new places and learn
+            about different cultures.
+          </li>
+          <li>
+            <strong>Music:</strong> I play the guitar and listen to a variety of
+            music genres.
+          </li>
+          <li>
+            <strong>Photography:</strong> I am an amateur photographer, and I
+            love capturing moments from my travels.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Current Classes</h2>
+        <ul class="classes">
+          <li>
+            <strong>Web Development:</strong> Learning full-stack web
+            development including HTML, CSS, JavaScript, and React.
+          </li>
+          <li>
+            <strong>Data Science:</strong> Exploring the basics of data
+            analysis, Python programming, and machine learning.
+          </li>
+          <li>
+            <strong>Philosophy:</strong> Studying ancient Greek philosophy and
+            its relevance in today's world.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact Information</h2>
+        <ul class="contact-info">
+          <li><strong>Email:</strong> johndoe@example.com</li>
+          <li><strong>Phone:</strong> (123) 456-7890</li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+              >John Doe LinkedIn</a
+            >
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/johndoe" target="_blank"
+              >johndoe GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
