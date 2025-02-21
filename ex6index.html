@@ -3,171 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
+    <title>My Awesome Blog</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: row;
+        background-color: #f4f4f4;
       }
-
-      header {
-        background-color: #333;
-        color: white;
+      .container {
+        width: 80%;
+        margin: auto;
+        background: white;
         padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background: #0056b3;
+        color: white;
+        padding: 15px;
         text-align: center;
       }
-
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      nav ul li {
-        display: inline;
+      .header a {
+        color: white;
+        text-decoration: none;
+        float: right;
         margin-right: 20px;
       }
-
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      main {
-        flex: 3;
-        padding: 20px;
-      }
-
-      article {
-        margin-bottom: 30px;
-      }
-
-      article img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      h2 {
-        color: #333;
-      }
-
-      aside {
-        flex: 1;
-        background-color: #f4f4f4;
-        padding: 20px;
-        border-left: 2px solid #ddd;
-      }
-
-      aside ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      aside ul li {
-        margin-bottom: 10px;
-      }
-
-      aside ul li a {
-        color: #333;
-        text-decoration: none;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
+      .image-container {
         text-align: center;
+        padding: 20px;
+        background: #a2d9ce;
+      }
+      .image-container img {
+        width: 300px; /* Resize image to 300px width */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .content {
+        padding: 20px;
+      }
+      .content h2 {
+        color: #0056b3;
+      }
+      .sidebar {
+        background: #24d1eb;
         padding: 10px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+        margin: 20px 0;
+      }
+      .sidebar a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        margin-top: 5px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>My Blog</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <h2>Featured Post</h2>
-        <img src="featured-image.jpg" alt="Featured Blog Image" />
+    <div class="header">
+      <h1>My Awesome Blog</h1>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </div>
+    <div class="image-container">
+      <img
+        src="c:\Users\hemar\New folder (2)\coffee manag.py\COMPUTER.jpg"
+        alt="Blog Banner"
+      />
+    </div>
+    <div class="container">
+      <div class="content">
+        <h2>Title of the first blog</h2>
+        <p><strong>By Aziz Ali</strong></p>
         <p>
-          Welcome to my blog! Here you'll find all kinds of useful and exciting
-          content about various topics. Stay tuned for new posts!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
+          commodo nulla, nec laoreet leo consequat id...
         </p>
-      </section>
-
-      <article>
-        <h2>Post Title 1</h2>
+      </div>
+      <div class="sidebar">
+        <h3>Useful Links</h3>
+        <a href="#">AzizAli.com</a>
+        <a href="#">iLoveCoding.org</a>
+      </div>
+      <div class="content">
+        <h2>Title of the first blog</h2>
+        <p><strong>By Aziz Ali</strong></p>
         <p>
-          <strong>Author:</strong> Jane Doe | <strong>Date:</strong> February
-          15, 2025
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
+          commodo nulla, nec laoreet leo consequat id...
         </p>
-        <img src="post1-image.jpg" alt="Blog Post 1 Image" />
-        <p>
-          This is a brief description of the first blog post. It can give an
-          overview or introduction to the content. Click the link below to read
-          more about this topic.
-        </p>
-        <a href="#">Read more...</a>
-      </article>
-
-      <article>
-        <h2>Post Title 2</h2>
-        <p>
-          <strong>Author:</strong> John Smith | <strong>Date:</strong> February
-          10, 2025
-        </p>
-        <img src="post2-image.jpg" alt="Blog Post 2 Image" />
-        <p>
-          This is a brief description of the second blog post. It can provide a
-          teaser or an interesting snippet of the article. Follow the link to
-          read the full post.
-        </p>
-        <a href="#">Read more...</a>
-      </article>
-
-      <article>
-        <h2>Post Title 3</h2>
-        <p>
-          <strong>Author:</strong> Emily Johnson |
-          <strong>Date:</strong> February 5, 2025
-        </p>
-        <img src="post3-image.jpg" alt="Blog Post 3 Image" />
-        <p>
-          This is a brief description of the third blog post. It serves as an
-          introduction or a preview for the readers. Click below to explore more
-          about this topic.
-        </p>
-        <a href="#">Read more...</a>
-      </article>
-    </main>
-
-    <aside>
-      <h3>Useful Links</h3>
-      <ul>
-        <li><a href="#">Blog Archive</a></li>
-        <li><a href="#">Popular Posts</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Newsletter</a></li>
-      </ul>
-    </aside>
-
-    <footer>
-      <p>&copy; 2025 My Blog. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
   </body>
 </html>
+
