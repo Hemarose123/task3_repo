@@ -3,183 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Doe's Profile</title>
+    <title>About Victoria Kirst</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-color: #e6e6e6;
+        padding: 20px;
       }
-
-      header {
-        background-color: #333;
+      .container {
+        background-color: #4d4d4d;
         color: white;
         padding: 20px;
-        text-align: center;
-        width: 100%;
+        width: 600px;
+        margin: auto;
+        border-radius: 10px;
       }
-
-      header h1 {
-        margin: 0;
+      h1 {
+        color: #85a3e0;
       }
-
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      nav ul li {
-        display: inline;
-        margin-right: 20px;
-      }
-
-      nav ul li a {
-        color: white;
+      a {
         text-decoration: none;
+        color: red;
       }
-
-      main {
-        width: 80%;
-        max-width: 1200px;
-        margin-top: 20px;
-        background-color: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      .highlight {
+        color: yellow;
       }
-
-      section {
-        margin-bottom: 30px;
+      .section-title {
+        color: #85a3e0;
+        font-weight: bold;
       }
-
-      section h2 {
-        color: #333;
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
       }
-
-      img.profile-img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-      }
-
-      .contact-info,
-      .interests,
-      .classes {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      .contact-info li,
-      .interests li,
-      .classes li {
-        margin-bottom: 10px;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-      }
-
-      footer p {
-        margin: 0;
+      .mood-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>John Doe's Profile</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <h1>About Victoria Kirst</h1>
+      <p>
+        My name is Victoria and I am <span class="highlight">jolly</span>,
+        <span class="highlight">clumsy</span>, and
+        <span class="highlight">four-eyed</span>.
+      </p>
 
-    <main>
-      <section>
-        <h2>Personal Information</h2>
-        <img src="john_doe.jpg" alt="John Doe" class="profile-img" />
-        <p><strong>Name:</strong> John Doe</p>
-        <p><strong>Age:</strong> 25</p>
-        <p><strong>Email:</strong> johndoe@example.com</p>
-        <p><strong>Location:</strong> New York, USA</p>
-      </section>
+      <p class="section-title">My Classes This Quarter</p>
+      <ul>
+        <li>CSE 451 - Operating Systems</li>
+        <li>CSE 471 - Computer Design and Organization</li>
+        <li>PHYS 121 - Physics: Mechanics</li>
+        <li>CSE 498 - Research w/ Prof. Luis Ceze</li>
+      </ul>
 
-      <section>
-        <h2>Interests</h2>
-        <ul class="interests">
-          <li>
-            <strong>Reading:</strong> I enjoy reading books on technology,
-            philosophy, and science fiction.
-          </li>
-          <li>
-            <strong>Traveling:</strong> I love to explore new places and learn
-            about different cultures.
-          </li>
-          <li>
-            <strong>Music:</strong> I play the guitar and listen to a variety of
-            music genres.
-          </li>
-          <li>
-            <strong>Photography:</strong> I am an amateur photographer, and I
-            love capturing moments from my travels.
-          </li>
-        </ul>
-      </section>
+      <p class="section-title">My Favorite Movies</p>
+      <p><i>(I actually don’t watch too many movies, so...here goes!)</i></p>
+      <ol>
+        <li>The last 30 minutes of Forrest Gump (<a href="#">IMDB</a>)</li>
+        <li>Star Trek Episode V with Zazu (<a href="#">IMDB</a>)</li>
+        <li>
+          Fight Club (not really, but I’ve seen like 3 movies total so this is
+          my 3rd fave by technicality) (<a href="#">IMDB</a>)
+        </li>
+      </ol>
 
-      <section>
-        <h2>Current Classes</h2>
-        <ul class="classes">
-          <li>
-            <strong>Web Development:</strong> Learning full-stack web
-            development including HTML, CSS, JavaScript, and React.
-          </li>
-          <li>
-            <strong>Data Science:</strong> Exploring the basics of data
-            analysis, Python programming, and machine learning.
-          </li>
-          <li>
-            <strong>Philosophy:</strong> Studying ancient Greek philosophy and
-            its relevance in today's world.
-          </li>
-        </ul>
-      </section>
+      <p class="section-title">My Moods</p>
+      <div class="mood-container">
+        <div>
+          <p>Happy:</p>
+          <img
+            src="c:\Users\hemar\New folder (2)\coffee manag.py\HAPPY.jpg"
+            alt="Happy Face"
+          />
+        </div>
+        <div>
+          <p>Sad:</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
+            alt="Sad Puppy"
+          />
+        </div>
+      </div>
 
-      <section>
-        <h2>Contact Information</h2>
-        <ul class="contact-info">
-          <li><strong>Email:</strong> johndoe@example.com</li>
-          <li><strong>Phone:</strong> (123) 456-7890</li>
-          <li>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/johndoe" target="_blank"
-              >John Doe LinkedIn</a
-            >
-          </li>
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/johndoe" target="_blank"
-              >johndoe GitHub</a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 John Doe. All rights reserved.</p>
-    </footer>
+      <p class="section-title">Fun Facts About My Neighbors</p>
+      <ul>
+        <li><b>Sue Smith:</b> Effervescent is a word that describes her.</li>
+        <li><b>Bill Thompson:</b> Loves playing Yu-Gi-Oh.</li>
+      </ul>
+    </div>
   </body>
 </html>
